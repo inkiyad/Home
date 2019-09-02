@@ -47,8 +47,9 @@ body, html {
 	border: 3px solid;
     border-radius: 100%;
 	border-color: white;
-	position:absolute;
-	top: 0%;
-	left: 42.5%;
+	position: absolute;
+	top: -30%;
+	left: 35%;
+	align-content: center;
 	z-index: 3
   }
