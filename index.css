@@ -39,17 +39,25 @@ body, html {
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 40%;
-    padding: 20px;
+	height: 250px;
+	padding-bottom: 2%;
     text-align: center;
   }
 
-  img {
-	border: 3px solid;
-    border-radius: 100%;
-	border-color: white;
-	position: absolute;
-	top: -30%;
-	left: 35%;
-	align-content: center;
-	z-index: 3
+  .texts {
+	transform: translate(0%, -50%);
+	padding-bottom: 2%;
   }
+
+.sm-image {
+	transform: translate(0%, -50%);
+}
+
+  img {	
+    border: 3px solid;
+    border-radius: 100%;
+    border-color: white;
+    z-index: 3;
+    horizontal-align: middle;
+  }
+
