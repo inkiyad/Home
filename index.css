@@ -51,13 +51,11 @@ body, html {
 
   .sm-image {
 	transform: translate(0%, -50%);
+        border: 3px solid;
+        border-radius: 100%;
+        border-color: white;
+        z-index: 4;
+        horizontal-align: middle;
   }
 
-  img {	
-    border: 3px solid;
-    border-radius: 100%;
-    border-color: white;
-    z-index: 4;
-    horizontal-align: middle;
-  }
-
+ 
