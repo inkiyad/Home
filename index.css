@@ -57,7 +57,7 @@ body, html {
     border: 3px solid;
     border-radius: 100%;
     border-color: white;
-    z-index: 3;
+    z-index: 4;
     horizontal-align: middle;
   }
 
