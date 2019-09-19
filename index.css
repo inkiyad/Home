@@ -49,13 +49,18 @@ body, html {
 	padding-bottom: 2%;
   }
 
-  /* .sm-image {
-	transform: translate(0%, -2%);
+   .sm-image {
+	transform: translate(0%, -50%);
+
+  }
+
+   img {
         border: 3px solid;
         border-radius: 100%;
         border-color: white;
-        z-index: 4;
+        z-index: 3;
         horizontal-align: middle;
-  } */
+	   	position: static;
+  }
 
  
