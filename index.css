@@ -21,8 +21,8 @@ body, html {
     
     /* Center and scale the image nicely */
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-size: cover;  
   }
 
   
@@ -44,8 +44,9 @@ body, html {
   }
 
   .texts {
-	transform: translate(0%, -40%);
-	padding-bottom: 25%;
+	position: relative;
+	transform: translate(0%, -70px);
+	padding-bottom: 40%;
   }
 
    .sm-image {
