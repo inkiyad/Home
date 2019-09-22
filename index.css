@@ -36,17 +36,17 @@ body, html {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
     z-index: 2;
     width: 40%;
-	height: 250px;
+	height: 159px;
 	padding-bottom: 2%;
     text-align: center;
   }
 
   .texts {
 	transform: translate(0%, -50%);
-	padding-bottom: 2%;
+	padding-bottom: 25%;
   }
 
    .sm-image {
@@ -62,3 +62,79 @@ body, html {
         horizontal-align: middle;
 	   	position: static;
    }
+
+   .container1 {
+	float: auto;
+	background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+	position: relative;
+	transform: translate(20.5%, -40%);
+    top: -15%;
+    left: 25%;
+    margin-left: 1%;
+    z-index: 2;
+    width:19.5%;
+	height: 50px;
+	line-height: 50%; 
+    text-align: center;
+	padding: 20;
+}
+
+.container2 {
+	float: auto;
+	background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+	position: relative;
+	transform: translate(-2.5%, -140%);
+    top: -15%;
+    left: 50%;
+    margin-left: 1%;
+    z-index: 2;
+    width:19.5%;
+	height: 50px;
+	line-height: 50%; 
+    text-align: center;
+	padding: 20;
+}
+
+@media screen and (max-width: 850px) {
+	.container1 {
+		position: absolute;
+		top: 60%;
+		left: 49%;
+		transform: translate(-50%, 240%);
+		width: 40%;
+	}
+
+	.container2 {
+		position: absolute;
+		top: 60%;
+		left: 49%;
+		transform: translate(-50%, 120%);
+		width: 40%;
+
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.container2 {
+		transform: translate(-50%, 120%);
+	}
+	
+	.bg-text, .container1, .container2 {
+		width: 65%;
+	}
+}
+	
+@media screen and (max-width: 355px) {
+	.bg-text, .container1, .container2 {
+		width: 80%;
+	}
+}
