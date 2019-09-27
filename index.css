@@ -9,7 +9,7 @@ body, html {
   }
   
   .bg-image {
-    /* The image used */
+    /* The image used  */
     background-image: url("images/IMG_5945.jpeg");
     
     /* Add the blur effect */
@@ -43,10 +43,14 @@ body, html {
     text-align: center;
   }
 
+h1 {
+	cursor: pointer;	
+}
+
   .texts {
 	position: relative;
 	transform: translate(0%, -70px);
-	padding-bottom: 40%;
+	padding-bottom: 0%;
   }
 
    .sm-image {
@@ -81,6 +85,7 @@ body, html {
 	line-height: 50%; 
     text-align: center;
 	padding: 20;
+	cursor: pointer;
 }
 
 .container2 {
@@ -101,7 +106,23 @@ body, html {
 	line-height: 50%; 
     text-align: center;
 	padding: 20;
+	cursor: pointer;
 }
+
+.container1:hover,.container2:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.container1:hover ~ .bg-image{
+	background-image: url("images/IMG-6129.jpg");
+    -webkit-filter: blur(0px);
+}
+
+.container2:hover ~ .bg-image{
+	background-image: url("images/hMSCs.jpg"); 
+	-webkit-filter: blur(1px);
+}
+
 
 @media screen and (max-width: 850px) {
 	.container1 {
