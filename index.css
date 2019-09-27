@@ -21,8 +21,8 @@ body, html {
     
     /* Center and scale the image nicely */
     background-position: center;
-    background-repeat: repeat-y;
     background-size: cover;  
+	background-repeat: repeat-y;
   }
 
   
@@ -113,16 +113,19 @@ h1 {
 	background-color: rgba(0,0,0,0.8);
 }
 
-.container1:hover ~ .bg-image{
+.container1:hover ~ .bg-image, .bg-image:active {
 	background-image: url("images/IMG-6129.jpg");
     -webkit-filter: blur(0px);
 }
 
-.container2:hover ~ .bg-image{
+.container2:hover ~ .bg-image, .big-image:active {
 	background-image: url("images/hMSCs.jpg"); 
 	-webkit-filter: blur(1px);
 }
 
+.bg-image:hover .big-image:active {
+	background-image: url("images/IMG_5945.jpeg")
+}
 
 @media screen and (max-width: 850px) {
 	.container1 {
@@ -148,6 +151,7 @@ h1 {
 	.container2 {
 		transform: translate(-50%, 60px);
 	}
+	
 	
 	.bg-text, .container1, .container2 {
 		width: 65%;
