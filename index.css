@@ -113,17 +113,17 @@ h1 {
 	background-color: rgba(0,0,0,0.8);
 }
 
-.container1:hover ~ .bg-image, .bg-image:active {
+.container1:hover ~ .bg-image, .big-image:focus {
 	background-image: url("images/IMG-6129.jpg");
     -webkit-filter: blur(0px);
 }
 
-.container2:hover ~ .bg-image, .big-image:active {
+.container2:hover ~ .bg-image, .big-image:focus {
 	background-image: url("images/hMSCs.jpg"); 
 	-webkit-filter: blur(1px);
 }
 
-.bg-image:hover .big-image:active {
+.bg-image:hover{
 	background-image: url("images/IMG_5945.jpeg")
 }
 
@@ -156,6 +156,8 @@ h1 {
 	.bg-text, .container1, .container2 {
 		width: 65%;
 	}
+	
+	
 }
 	
 @media screen and (max-width: 355px) {
