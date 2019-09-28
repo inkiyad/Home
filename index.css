@@ -157,16 +157,16 @@ h1 {
 		width: 65%;
 	}
 	
-	.container1:active,.container2:active {
+	.container1:target,.container2:target {
 	background-color: rgba(0,0,0,0.8);
 	}
 
-	.container1:active, .container1:focus ~ .bg-image {
+	.container1:target, .container1:focus ~ .bg-image {
 		background-image: url("images/IMG-6129.jpg");
 		-webkit-filter: blur(0px);
 	}
 
-	.container2:active, .container2:focus ~ .bg-image {
+	.container2:target, .container2:focus ~ .bg-image {
 		background-image: url("images/hMSCs.jpg"); 
 		-webkit-filter: blur(1px);
 	}
