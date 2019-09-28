@@ -109,21 +109,21 @@ h1 {
 	cursor: pointer;
 }
 
-.container1:hover,.container2:hover {
+.container1:hover, .container1:active, .container2:hover, .container2:active {
 	background-color: rgba(0,0,0,0.8);
 }
 
-.container1:hover ~ .bg-image, .big-image:focus {
+.container1:hover ~ .bg-image {
 	background-image: url("images/IMG-6129.jpg");
     -webkit-filter: blur(0px);
 }
 
-.container2:hover ~ .bg-image, .big-image:focus {
+.container2:hover ~ .bg-image {
 	background-image: url("images/hMSCs.jpg"); 
 	-webkit-filter: blur(1px);
 }
 
-.bg-image:hover{
+.bg-image:hover, .bg-image:focus {
 	background-image: url("images/IMG_5945.jpeg")
 }
 
@@ -157,7 +157,23 @@ h1 {
 		width: 65%;
 	}
 	
-	
+	.container1:active,.container2:active {
+	background-color: rgba(0,0,0,0.8);
+	}
+
+	.container1:active, .container1:focus ~ .bg-image {
+		background-image: url("images/IMG-6129.jpg");
+		-webkit-filter: blur(0px);
+	}
+
+	.container2:active, .container2:focus ~ .bg-image {
+		background-image: url("images/hMSCs.jpg"); 
+		-webkit-filter: blur(1px);
+	}
+
+	.bg-image:active{
+		background-image: url("images/IMG_5945.jpeg")
+	}
 }
 	
 @media screen and (max-width: 355px) {
