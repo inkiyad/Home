@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
   }
 
   * {
@@ -9,7 +10,7 @@ body, html {
   }
   
   .bg-image {
-    /* The image used */
+    /* The image used  */
     background-image: url("images/IMG_5945.jpeg");
     
     /* Add the blur effect */
@@ -21,8 +22,8 @@ body, html {
     
     /* Center and scale the image nicely */
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;  
+	background-repeat: repeat-y;
   }
 
   
@@ -36,9 +37,10 @@ body, html {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
     z-index: 2;
     width: 40%;
+<<<<<<< HEAD
 	height: 250px;
 	padding-bottom: 2%;
     text-align: center;
@@ -47,6 +49,20 @@ body, html {
   .texts {
 	transform: translate(0%, -50%);
 	padding-bottom: 2%;
+=======
+	height: 159px;
+    text-align: center;
+  }
+
+h1 {
+	cursor: pointer;	
+}
+
+  .texts {
+	position: relative;
+	transform: translate(0%, -70px);
+	padding-bottom: 0%;
+>>>>>>> a048e27ebf5356384c4cde5c0ec33f12a0911ca4
   }
 
    .sm-image {
@@ -61,4 +77,123 @@ body, html {
         z-index: 3;
         horizontal-align: middle;
 	   	position: static;
+<<<<<<< HEAD
    }
+=======
+   }
+
+   .container1 {
+	float: auto;
+	background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+	position: absolute;
+	transform: translate(20.6%, 60px);
+    top: 60%;
+    left: 25%;
+    margin-left: 1%;
+    z-index: 2;
+    width:19.5%;
+	height: 50px;
+	line-height: 50%; 
+    text-align: center;
+	padding: 20;
+	cursor: pointer;
+}
+
+.container2 {
+	float: auto;
+	background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+	position: absolute;
+	transform: translate(-2.8%, 60px);
+    top: 60%;
+    left: 50%;
+    margin-left: 1%;
+    z-index: 2;
+    width:19.5%;
+	height: 50px;
+	line-height: 50%; 
+    text-align: center;
+	padding: 20;
+	cursor: pointer;
+}
+
+.container1:hover, .container1:active, .container2:hover, .container2:active {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.container1:hover ~ .bg-image {
+	background-image: url("images/IMG-6129.jpg");
+    -webkit-filter: blur(0px);
+}
+
+.container2:hover ~ .bg-image {
+	background-image: url("images/hMSCs.jpg"); 
+	-webkit-filter: blur(1px);
+}
+
+.bg-image:hover, .bg-image:focus {
+	background-image: url("images/IMG_5945.jpeg")
+}
+
+@media screen and (max-width: 850px) {
+	.container1 {
+		position: absolute;
+		top: 60%;
+		left: 49%;
+		transform: translate(-50%, 120px);
+		width: 40%;
+	}
+
+	.container2 {
+		position: absolute;
+		top: 60%;
+		left: 49%;
+		transform: translate(-50%, 60px);
+		width: 40%;
+
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.container2 {
+		transform: translate(-50%, 60px);
+	}
+	
+	
+	.bg-text, .container1, .container2 {
+		width: 65%;
+	}
+	
+	.container1:target,.container2:target {
+	background-color: rgba(0,0,0,0.8);
+	}
+
+	.container1:target, .container1:focus ~ .bg-image {
+		background-image: url("images/IMG-6129.jpg");
+		-webkit-filter: blur(0px);
+	}
+
+	.container2:target, .container2:focus ~ .bg-image {
+		background-image: url("images/hMSCs.jpg"); 
+		-webkit-filter: blur(1px);
+	}
+
+	.bg-image:active{
+		background-image: url("images/IMG_5945.jpeg")
+	}
+}
+	
+@media screen and (max-width: 355px) {
+	.bg-text, .container1, .container2 {
+		width: 80%;
+	}
+}
+>>>>>>> a048e27ebf5356384c4cde5c0ec33f12a0911ca4
