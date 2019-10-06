@@ -40,16 +40,6 @@ body, html {
     transform: translate(-50%, -70%);
     z-index: 2;
     width: 40%;
-<<<<<<< HEAD
-	height: 250px;
-	padding-bottom: 2%;
-    text-align: center;
-  }
-
-  .texts {
-	transform: translate(0%, -50%);
-	padding-bottom: 2%;
-=======
 	height: 159px;
     text-align: center;
   }
@@ -62,7 +52,6 @@ h1 {
 	position: relative;
 	transform: translate(0%, -70px);
 	padding-bottom: 0%;
->>>>>>> a048e27ebf5356384c4cde5c0ec33f12a0911ca4
   }
 
    .sm-image {
@@ -77,9 +66,6 @@ h1 {
         z-index: 3;
         horizontal-align: middle;
 	   	position: static;
-<<<<<<< HEAD
-   }
-=======
    }
 
    .container1 {
@@ -196,4 +182,3 @@ h1 {
 		width: 80%;
 	}
 }
->>>>>>> a048e27ebf5356384c4cde5c0ec33f12a0911ca4
