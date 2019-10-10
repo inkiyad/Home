@@ -197,7 +197,7 @@ h1 {
 	}
 
 	.container2:target, .container2:focus ~ .bg-image {
-		background-image: url("images/hMSCs.jpg"); 
+		/* background-image: url("images/hMSCs.jpg"); */ 
 		-webkit-filter: blur(1px);
 	}
 
