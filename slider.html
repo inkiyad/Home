@@ -1,0 +1,36 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="slider.css">
+<head>
+<meta charset="utf-8">
+<title>Slider</title>
+</head>
+<body>
+	<div class="bg-img">
+	<div id="image-slider">
+	</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		var slide = document.getElementById("image-slider");
+			var ii=0;
+			 for (; ii<Math.floor(2 / 3 * screen.width); ii++){
+				(function(ii) {
+					setTimeout(function(){
+						slide.style.left = ii + 'px';
+					}, 2.5*ii);
+				})(ii);
+			} 
+		
+			setTimeout(function(right2left){
+			var k = 0;
+			for (; k<Math.floor(screen.width / 2.5); k++){
+				(function(k) {
+					setTimeout(function(){
+						slide.style.left = ii - k + 'px';
+						var l = ii - k; return l;
+					}, 5*k);
+				})(k);				
+			}
+		}, 3000);
+		
+	</script>
