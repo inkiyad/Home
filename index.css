@@ -143,13 +143,11 @@ h1 {
 
 .container2:hover ~ .bg-image {
 	background-image: url("images/TCGA-copy.png"); 
-	-webkit-filter: blur(2px);
+	-webkit-filter: blur(1px);
 }
 
 .container2:hover ~ .bg-image > #bg-image2{
 	visibility: visible;
-	-webkit-filter: blur(0px);
-	filter: blur(0px);
 }
 
 
